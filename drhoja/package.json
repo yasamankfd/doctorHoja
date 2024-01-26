@@ -1,0 +1,23 @@
+{
+    "name": "drHoja",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "npx tailwindcss -i ./src/css/tailwind.css -o ./public/build/tailwind.css --watch",
+        "mini": "npx tailwindcss -i ./src/css/tailwind.css -o ./public/build/tailwind.css --minify",
+        "alpine": "npx esbuild ./src/js/app.js --outfile=public/build/app.js --bundle --watch"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@tailwindcss/forms": "^0.5.3",
+        "tailwindcss": "^3.2.4"
+    },
+    "dependencies": {
+        "alpinejs": "^3.13.3",
+        "esbuild": "^0.19.8",
+        "tw-elements": "^1.0.0-beta2"
+    }
+}
